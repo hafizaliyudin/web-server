@@ -1,0 +1,10 @@
+ <VirtualHost *:3000>
+    ServerName hungry-impala-27.a276.dcdg.xyz
+    ServerAlias www.hungry-impala-27.a276.dcdg.xyz
+    ServerAdmin admin@dicoding.xyz
+
+    ProxyPreserveHost On
+    ProxyPass / http://18.141.222.85:8000/
+    ProxyPassReverse / http://18.141.222.85:8000/
+</VirtualHost>
+
